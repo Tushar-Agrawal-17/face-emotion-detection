@@ -5,11 +5,17 @@ The system captures video from a webcam, detects human faces, and predicts emoti
 It classifies facial expressions into the following emotions:
 
 Angry
+
 Disgust
+
 Fear
+
 Happy
+
 Sad
+
 Surprise
+
 Neutral
 
 This project demonstrates how Computer Vision and Deep Learning can be used to interpret human emotions from facial expressions.
@@ -23,11 +29,17 @@ The model is trained on facial expression images using a Convolutional Neural Ne
 Workflow
 
 - Capture live video from webcam
+
 - Detect faces using Haar Cascade Classifier
+
 - Convert image to grayscale
+
 - Resize face image to 48×48 pixels
+
 - Predict emotion using trained CNN model
+
 - Display predicted emotion on the screen
+
 - Technologies Used
 
 Python
@@ -56,26 +68,38 @@ The emotion classification model is built using a Convolutional Neural Network (
 Typical architecture:
 
 Input Layer (48×48 grayscale image)
+
 Convolution Layer
 Activation (ReLU)
 Max Pooling
+
 Convolution Layer
 Activation (ReLU)
 Max Pooling
+
 Flatten Layer
+
 Dense Layer
 Dropout
+
 Output Layer (Softmax)
+
 The final output layer predicts 7 emotion classes.
 
 Emotion Classes
 
 0 → Angry
+
 1 → Disgust
+
 2 → Fear
+
 3 → Happy
+
 4 → Sad
+
 5 → Surprise
+
 6 → Neutral
 
 Real-Time Emotion Detection
@@ -85,9 +109,13 @@ Real-Time Emotion Detection
 Steps performed:
 
 Webcam captures frame
+
 Face detected using Haar Cascade
+
 Face resized to 48×48 pixels
+
 CNN predicts emotion
+
 Emotion label displayed on screen
 
 Example output:
@@ -98,41 +126,64 @@ Neutral (91%)
 
 Detected emotion appears above the face bounding box.
 
- Requirements
+Requirements
 
 Main libraries used in this project:
+
 opencv-python
+
 tensorflow
+
 keras
+
 numpy
+
 matplotlib
+
 pandas
 
 Running the Application
 
 - Run the following command to start emotion detection:
+
 - python realtimedetection.py
+
 - The webcam will open and start detecting emotions.
+
 - Press q key to exit the application.
+
 
 Future Improvements
 
 - This project can be improved by adding features like:
+
 - Emotion confidence percentage display
+
 - Emotion statistics graph
+
 - Emotion history tracking
+
 - Emotion-based music recommendation
+
 - Web application using Flask
+
 - Mobile application integration
+
 
 Applications
 
 Emotion detection systems can be used in:
+
 - Mental health monitoring
+
 - Smart surveillance systems
+
 - Human-computer interaction
+
 - Customer behavior analysis
+
 - Online education engagement monitoring
+
 - Gaming and entertainment systems
 
 Author
