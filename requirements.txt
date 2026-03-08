@@ -1,0 +1,9 @@
+tensorflow
+keras
+numpy
+pandas
+jupyter
+notebook
+tqdm
+opencv-contrib-python
+pip install notebook
